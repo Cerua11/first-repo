@@ -3,16 +3,15 @@
     padding:0;
     box-sizing: border-box;
     font-family: Arial;
+    line-height: 20px;
 }
 body{
     background-color: black;
 }
-
 header{
     display:flex;
     justify-content: center;
     align-items: center;
-
     backdrop-filter: blur(16px);
     border-bottom: solid 1px hsla(8,0%,100%,.08);
     width:100%; 
@@ -22,9 +21,11 @@ header{
 }
 header h1{
     color:white;
+    display:flex;
+    align-items: center;
     font-size:15px;
+    
 }
-
 .first-background-image{
     background-image: url(BH.JPEG);
     height:750px;
@@ -34,15 +35,13 @@ header h1{
     height: 800px;
     background-size: cover;
     color: white;
-   
 }
 .wrap-main-element  {
     display: flex;
     justify-content: center;
     margin-top:2%;
     height:110%;
-    width:100%;
-    
+    width:100%;  
 }
 .main-content-both-sides{
     margin:0px auto;
@@ -54,14 +53,32 @@ header h1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  
-
 }
 .left-side,.right-side{
-    
    height: 100%;
     width:50%;
    padding:10px;
+   
+}
+.right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-side p{
+    padding:10px 0px 0px 10px;
+    font-size:14px;
+}
+.home---main-fotography{
+    z-index: 1111;
+    background-image:url(me.JPEG);
+    background-position: center center;
+    background-size: 100% 100%;
+    margin-top:15px;
+    border-radius:25px;
+    height:100%;
+    width:85%;
 }
 
 #home---paragraph-name{
@@ -69,7 +86,6 @@ header h1{
     color:darkgray;
     margin-bottom:10px;
 }
-
 .left-side{
     padding-left:40px;
 }
@@ -77,7 +93,17 @@ header h1{
     font-size:23px;
     color:white;
 }
+.skills---text-pattern2{
+    color:gray;
+    font-size:16px;
+    font-weight: 300;
+    text-align: justify;
+    margin-right:30px;
+    padding-top:10px;
+    padding-right: 15px;
+    margin-bottom:40px;
 
+}
 .about-me-container{
     display:flex;
     flex-direction: column;
@@ -91,21 +117,16 @@ header h1{
     font-size:20px;
     margin-top:40px;
 }
-.about-me-container > h1::before{
+.before::before{
     height:1px;
     position:absolute;
     content:"";
     width: 30%;
     border-bottom: solid 1px hsla(0,0%,100%,.08);
-    margin:5px 0px;
-    top:28%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    top:28.65%; 
+        
 }
-
-.skills{
-  
+.skills---element{
     height:50px;
     border: solid 0.5px hsla(0,0%,100%,.08);
     max-width:95%;
@@ -117,21 +138,16 @@ header h1{
     background-color: hsla(0,0%,100%,.04);
     display: flex;
     flex-direction: row;
-
 }
-
 .skills-main{
     margin-top:20px;
     width:90%;
 }
-.skills img{
+.skills---element img{
    width:40px;
-
    padding: 1px;
-   
-
 }
-#button-show-more{
+.button-show-more{
     padding:4px 12px;
     border-radius:20px;
     margin-left:20px;
@@ -144,65 +160,35 @@ header h1{
     font-weight: 400;
     cursor: pointer;
     display: inline-block;
-    font-family: Inter,sans-serif;
+    font-family: Inter,  sans-serif;
 }
 .button-show-more:hover{
-    background-color: hsla(0,0%,100%,.15);
-    border: 1px solid hsla(0,0%,100%,.15);
-    color:hsla(0,0%,100%,0.9);
+    background-color: hsla(0,0%,100%,.2);
+    border: 1px solid hsla(0,0%,100%,.2);
+    color:hsla(0,0%,100%,1.2);
     transition: all 0.2s
 }
-
-#JS{
+#skills---header{
     padding:0px;
-    margin-top:8px;
-
-
+    margin-top:6px;
 }
-.text h1{
-    font-size: 13px;
-    color:whitesmoke;
-    
-}
-.icon{
+.home--skills-icon-wrapper{
     padding:5px 5px 0px 10px;
 }
-.text p{
+.skills---text-pattern p{
     font-size:10px;
-    
 }
-.text{
+.skills---text-pattern h1{
+    font-size: 13px;
+    color:whitesmoke;
+}
+.skills---text-wrapper{
     display: flex;
     justify-content: flex-start;
-
-  
     flex-direction: column;
-    
-  
-  
+    margin-left:3px;
 }
-.teksttt{
-    display: flex;
-   justify-content: flex-start;
-    flex-direction: row;
-   text-align: left;
-    font-weight: 600;
-
-}
-
-.teksttt > .elo{
-    margin-top:3px;
-    padding:2px 2px 5px 5px;
-    display: flex;
-    justify-content: flex-start; 
-
-}
-#first-one{
-    margin-top:3px;
-    padding: 2px 2px 5px 0px;
-}
-
-#text{
+#skills---text-pattern{
     color:gray;
     font-size:16px;
     font-weight: 300;
@@ -211,82 +197,47 @@ header h1{
     padding-top:10px;
     padding-right: 15px;
     margin-bottom: 20px;
-
 }
-.right-side{
+.skills---text-wrapper-in-wrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.right-side p{
-    padding:10px 0px 0px 10px;
-    font-size:14px;
-}
-
-.image{
-    z-index: 1111;
-    background-image:url(me.JPEG);
-    background-position: center center;
-    background-size: 100% 100%;
-    margin-top:15px;
- 
-    border-radius:25px;
-   
-    height:100%;
-    width:85%;
-    
-}
-.nav{
-    position:fixed;
-   border: 1px solid hsla(0,0%,100%,.15);
-    height: 85px;
-    width:325px;
-    border-radius:50px;
-    bottom:20px;
-    z-index: 1111111;
-    padding:3px 30px;
-
-    display: flex;
+   justify-content: flex-start;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-}   
-
-
-.icons img{
-    max-width: 70px;
+   text-align: left;
+    font-weight: 600;
 }
-.icons img:hover{
-    scale:1.2;
+.skills---text-wrapper-in-wrapper > .skills-text-paragraph-wrapper{
+    padding:0px 2px 5px 5px;
+    display: flex;
+    justify-content: flex-start; 
+    padding-bottom:20px;
+    margin-left:3px;
+}
+.skills-text-paragraph-wrapper2{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;        
+    padding-bottom:20px;
 }
 
-
-.find-me{
+.home---section-find-me-in-social-media{
     display: flex;
     flex-direction:column;
-    justify-content: space-evenly
+    align-items: flex-start;
 }
-
-.socialmedia{
+.home---socialmedia-container{
     display: flex;
     flex-wrap: wrap;
     margin-top:0.5rem;
-    
-
-
 }
-.header{
+.home---header-for-socialmedia{
     margin-top:1rem;
 }
-.socialmedia img{
+.home---socialmedia-container img{
     max-width: 12px;
     position: relative;
     padding-top:3px;
     margin-right:5px;
-    
-    
-
 }
 .home---link-wrapper{
     position: relative;
@@ -300,7 +251,6 @@ header h1{
     text-decoration: none;
     border-radius:15px;
     padding:3px 10px 4px 8px;
-
 }
 .home--youtube{
     border-color: rgba(82,132,255,.12);
@@ -308,7 +258,6 @@ header h1{
 }
 .home--email{
     border: 1px solid rgba(50,215,75,.12);
-    
     background-color: rgba(50,215,75,.12);
 }
 .home--github{
@@ -326,27 +275,75 @@ header h1{
 
 .home--youtube:hover{
     border-color: rgba(245, 44, 44, .5);
-    background-color: rgba(255,3,2,.2);
+    background-color: rgba(255,3,2,.3);
+    color:hsla(0,0%,100%,.85);
+}
+.home--youtube:hover img{
+    scale:1.1;
+    transition: all 0.05s ease;
 }
 .home--email:hover{
     border: 1px solid rgba(50,215,75,.6);
-    
-    background-color: rgba(50,215,75,.2);
+    background-color: rgba(50,215,75,.3);
+    color:hsla(0,0%,100%,.85);
+}
+.home--email:hover img{
+    scale:1.1;
+    transition: all 0.05s ease;
 }
 .home--github:hover{
     border-color: rgba(64,120,192,.7);
-    background-color: rgba(64,120,192,.2);
+    background-color: rgba(64,120,192,.3);
+    color:hsla(0,0%,100%,.85);
+}
+.home--github:hover img{
+    scale:1.1;
+    transition: all 0.05s ease;
 }
 .home--instagram:hover{
     border-color: rgba(247,119,55,2);
-    background-color: rgba(247,119,55,.2);
+    background-color: rgba(247,119,55,.3);
+    color:hsla(0,0%,100%,.85);
+}
+.home--instagram:hover img{
+    scale:1.1;
+    transition: all 0.05s ease;
 }
 .home--facebook:hover{
     border-color: rgb(6, 111, 222);
-    background-color: rgba(10,132,255,.10);
+    background-color: rgba(10,132,255,.3);
+    color:hsla(0,0%,100%,.85);
+    
+}
+.home--facebook:hover img{
+    scale:1.1;
+    transition: all 0.05s ease;
+    
 }
 .home---link-text{
     position:relative;
     top:0;
     display: inline-block;
+}
+
+.home---nav-wrapper{
+    display: flex;
+    justify-content: center;
+    z-index:11333;
+}
+.home---nav-website{
+    position:fixed;
+    border: 1px solid hsla(0,0%,100%,.15);
+    height: auto;
+    width:auto;
+    border-radius:50px;
+    bottom:20px;
+    z-index: 1111111;
+    padding:3px 30px;
+}   
+.nav--icons img{
+    max-width: 70px;
+}
+.nav--icons img:hover{
+    scale:1.2;
 }
